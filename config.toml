@@ -1,4 +1,4 @@
-baseURL = "https://unkwn1.dev"
+baseURL = "https://jessefogarty.github.io"
 languageCode = "en"
 DefaultContentLanguage = "en"
 title = "Jesse's Digital Scratchpad"
@@ -94,8 +94,8 @@ url = "mailto:jfogarty@tuta.io"
   identifier = "about"
   url = "/about/"
 
-  [[menu.main]]
-  name = "Contact"
-  weight = 400
-  identifier = "contact"
-  url = "/contact/"
+  #[[menu.main]]
+  #name = "Contact"
+  #weight = 400
+  #identifier = "contact"
+  #url = "/contact/"
