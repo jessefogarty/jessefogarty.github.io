@@ -1,1 +1,0 @@
-# jessefogarty.github.io
