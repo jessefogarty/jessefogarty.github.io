@@ -3,22 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://unkwn1.dev/</loc>
+    <lastmod>2021-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://unkwn1.dev/post/modern-approach-to-seo-link-building/</loc>
+    <lastmod>2021-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://unkwn1.dev/categories/</loc>
+    <lastmod>2021-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://unkwn1.dev/categories/digital-marketing/</loc>
+    <lastmod>2021-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://unkwn1.dev/post/</loc>
+    <lastmod>2021-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://unkwn1.dev/tags/seo/</loc>
+    <lastmod>2021-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://unkwn1.dev/tags/</loc>
+    <lastmod>2021-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://unkwn1.dev/about/</loc>
     <lastmod>2021-02-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://unkwn1.dev/</loc>
-    <lastmod>2021-02-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://unkwn1.dev/tags/arch/</loc>
-    <lastmod>2021-02-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://unkwn1.dev/categories/</loc>
     <lastmod>2021-02-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -39,16 +64,6 @@
   
   <url>
     <loc>https://unkwn1.dev/categories/linux/</loc>
-    <lastmod>2021-02-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://unkwn1.dev/post/</loc>
-    <lastmod>2021-02-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://unkwn1.dev/tags/</loc>
     <lastmod>2021-02-17T00:00:00+00:00</lastmod>
   </url>
   
