@@ -6,7 +6,16 @@
     <description>Recent content on Jesse&#39;s Digital Scratchpad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 22 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://unkwn1.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://unkwn1.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pip Modules Names Only Using sed</title>
+      <link>https://unkwn1.dev/post/pip-module-names-using-sed/</link>
+      <pubDate>Mon, 22 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://unkwn1.dev/post/pip-module-names-using-sed/</guid>
+      <description>Getting Pip Package Names Using sed &amp;amp; pip freeze Upgrading pip packages can be a pain. More so when you&amp;rsquo;re not using virtual environments but, even with them it&amp;rsquo;s still annoying.</description>
+    </item>
+    
     <item>
       <title>A Modern Approach to Link Building for SEO</title>
       <link>https://unkwn1.dev/post/modern-approach-to-seo-link-building/</link>
@@ -23,6 +32,15 @@
       
       <guid>https://unkwn1.dev/about/</guid>
       <description>Where to begin? I started my foray into technology in highschool writing a blog. A blog with no real aim - rather a place for me to write about tech things I enjoyed.</description>
+    </item>
+    
+    <item>
+      <title>Contact Jesse Fogarty</title>
+      <link>https://unkwn1.dev/contact/</link>
+      <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://unkwn1.dev/contact/</guid>
+      <description></description>
     </item>
     
     <item>
