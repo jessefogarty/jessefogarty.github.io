@@ -6,7 +6,34 @@
     <description>Recent content in Categories on Jesse&#39;s Digital Scratchpad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 22 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://unkwn1.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://unkwn1.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coding</title>
+      <link>https://unkwn1.dev/categories/coding/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://unkwn1.dev/categories/coding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>InfoSec</title>
+      <link>https://unkwn1.dev/categories/infosec/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://unkwn1.dev/categories/infosec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://unkwn1.dev/categories/projects/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://unkwn1.dev/categories/projects/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Python</title>
       <link>https://unkwn1.dev/categories/python/</link>
