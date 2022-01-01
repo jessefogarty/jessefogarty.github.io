@@ -1,7 +1,7 @@
 +++
 author = "unkwn1"
 title = "DorkScan - Automating Dorked Search Queries"
-date = "2022-01-01"
+date = 2022-01-01
 description = "DorkScan automates the dorked query and scraping of search engine result pages to find links that include query parameters."
 tags = [
     "python",
