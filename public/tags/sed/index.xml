@@ -13,7 +13,9 @@
       <pubDate>Mon, 22 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://unkwn1.dev/post/pip-module-names-using-sed/</guid>
-      <description>Getting Pip Package Names Using sed &amp;amp; pip freeze Upgrading pip packages can be a pain. More so when you&amp;rsquo;re not using virtual environments but, even with them it&amp;rsquo;s still annoying.</description>
+      
+        <description>Getting Pip Package Names Using sed &amp;amp; pip freeze Upgrading pip packages can be a pain. More so when you&amp;rsquo;re not using virtual environments but, even with them it&amp;rsquo;s still annoying.</description>
+      
     </item>
     
   </channel>

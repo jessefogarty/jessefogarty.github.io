@@ -8,7 +8,7 @@
     
       Jesse Fogarty
         |
-        Pip Modules Names Only Using sed
+        DorkScan - Automating Dorked Search Queries
 
 
       
@@ -22,7 +22,7 @@
   <meta
     name="description"
     content="
-      Detailing a sed command I utilize in order to get pip package names only from pip freeze
+      DorkScan automates the dorked query and scraping of search engine result pages to find links that include query parameters.
 
 
     "
@@ -59,7 +59,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
 
-  <link rel="canonical" href="https://unkwn1.dev/post/pip-module-names-using-sed/" />
+  <link rel="canonical" href="https://unkwn1.dev/post/init-dorkscan-python-project/" />
 
   
   
@@ -86,8 +86,8 @@
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://unkwn1.dev/images/site-feature-image.png"/>
 
-<meta name="twitter:title" content="Pip Modules Names Only Using sed"/>
-<meta name="twitter:description" content="Detailing a sed command I utilize in order to get pip package names only from pip freeze"/>
+<meta name="twitter:title" content="DorkScan - Automating Dorked Search Queries"/>
+<meta name="twitter:description" content="DorkScan automates the dorked query and scraping of search engine result pages to find links that include query parameters."/>
 
 
 
@@ -103,11 +103,11 @@
         "@context": "http://schema.org",
         "@type": "BlogPosting",
         "articleSection": "post",
-        "name": "Pip Modules Names Only Using sed",
-        "headline": "Pip Modules Names Only Using sed",
+        "name": "DorkScan - Automating Dorked Search Queries",
+        "headline": "DorkScan - Automating Dorked Search Queries",
         "alternativeHeadline": "",
         "description": "
-      Detailing a sed command I utilize in order to get pip package names only from pip freeze
+      DorkScan automates the dorked query and scraping of search engine result pages to find links that include query parameters.
 
 
     ",
@@ -115,31 +115,31 @@
         "isFamilyFriendly": "true",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/unkwn1.dev\/post\/pip-module-names-using-sed\/"
+            "@id": "https:\/\/unkwn1.dev\/post\/init-dorkscan-python-project\/"
         },
         "author" : {
             "@type": "Person",
-            "name": "Jesse"
+            "name": "unkwn1"
         },
         "creator" : {
             "@type": "Person",
-            "name": "Jesse"
+            "name": "unkwn1"
         },
         "accountablePerson" : {
             "@type": "Person",
-            "name": "Jesse"
+            "name": "unkwn1"
         },
         "copyrightHolder" : {
             "@type": "Person",
-            "name": "Jesse"
+            "name": "unkwn1"
         },
-        "copyrightYear" : "2021",
-        "dateCreated": "2021-03-22T00:00:00.00Z",
-        "datePublished": "2021-03-22T00:00:00.00Z",
-        "dateModified": "2021-03-22T00:00:00.00Z",
+        "copyrightYear" : "2022",
+        "dateCreated": "2022-01-01T00:00:00.00Z",
+        "datePublished": "2022-01-01T00:00:00.00Z",
+        "dateModified": "2022-01-01T00:00:00.00Z",
         "publisher":{
             "@type":"Organization",
-            "name": "Jesse",
+            "name": "unkwn1",
             "url": "https://unkwn1.dev",
             "logo": {
                 "@type": "ImageObject",
@@ -158,30 +158,51 @@
       ]
 
     ,
-        "url" : "https:\/\/unkwn1.dev\/post\/pip-module-names-using-sed\/",
-        "wordCount" : "165",
+        "url" : "https:\/\/unkwn1.dev\/post\/init-dorkscan-python-project\/",
+        "wordCount" : "429",
         "genre" : [ 
       
-      "Python"
+      "Projects"
+
+    
+      
+        ,
+
+      
+      "InfoSec"
+
+    
+      
+        ,
+
+      
+      "Coding"
 
     ],
         "keywords" : [ 
       
-      "Linux"
+      "python"
 
     
       
         ,
 
       
-      "Python"
+      "gitlab"
 
     
       
         ,
 
       
-      "sed"
+      "google dorking"
+
+    
+      
+        ,
+
+      
+      "web scraping"
 
     ]
     }
@@ -346,42 +367,75 @@
     <div class="post-content">
       
       <div class="post-title">
-        <h1>Pip Modules Names Only Using sed</h1>
+        <h1>DorkScan - Automating Dorked Search Queries</h1>
         
           <div class="info">
             <em class="fas fa-calendar-day"></em>
             <span class="date"
               >
-                Mon, Mar 22, 2021
+                Sat, Jan 1, 2022
 
 
               </span
             >
             <em class="fas fa-stopwatch"></em>
-            <span class="reading-time">One-minute read</span>
+            <span class="reading-time">3-minute read</span>
           </div>
 
         
-      </div><h1 id="getting-pip-package-names-using-sed--pip-freeze">Getting Pip Package Names Using sed &amp; pip freeze</h1>
-<p>Upgrading pip packages can be a pain. More so when you&rsquo;re not using virtual environments but, even with them it&rsquo;s still annoying. There are some packages out there to help such as <code>pip-review</code>. I&rsquo;ve had issues with it and accordingly have been updating manually.</p>
-<h3 id="pip-freeze--sed">pip freeze + sed</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pip freeze <span class="p">|</span> sed <span class="s2">&#34;s/==.*</span>$<span class="s2">//g&#34;</span> &gt; pip_pkgs.txt
-</code></pre></div><p>To explain what&rsquo;s going on, I&rsquo;ll break down the above into a couple parts.</p>
-<ul>
-<li><code>pip freeze</code> - will generate a list of installed pip packages in the format <code>&lt;package&gt;==&lt;version&gt;</code></li>
-<li>we when pipe the pip freeze output to <code>sed</code>. <code>&quot;s/==.*$//g&quot;</code> is used to strip the == and version numbers. We then save the output to a file <code>pip_pkgs.txt</code></li>
-</ul>
-<p>I plan on the near future working this into a python script. Here&rsquo;s some of the functionality I&rsquo;ve been contemplating.</p>
-<ul>
-<li><input disabled="" type="checkbox"> interactive Y/N upgrade loop</li>
-<li><input disabled="" type="checkbox"> track version before and after upgrade for easy rollbacks</li>
-<li><input disabled="" type="checkbox"> <em>maybe</em> an update checker. The annoyance is pypi blocking search queries</li>
-</ul>
+      </div><h1 id="dorkscan---automate-scraping-dorked-search-queries">DorkScan - Automate Scraping Dorked Search Queries</h1>
+<p><a href="https://gitlab.com/unkwn1/dorkscan">DorkScan</a>, a project I&rsquo;ve been working on for the past couple of weeks after contributing to a friends (original) project. DorkScan automates the dorked query and scraping of search engine result pages to find links that include query parameters. Below I&rsquo;ll go over the module and some interesting things I learned along the way.</p>
+<h2 id="dorkscan">DorkScan()</h2>
+<p>DorkScan boils down to an importable function. Under the hood there&rsquo;s the main function and supporting modules; engines and network.</p>
+<p>The main function DorkScan() takes the required / optional arguments - doing some basic sanity checks. Then it begins iterating through pages of result pages.</p>
+<p>Within page iteration, an instance of ThreadPoolExecutor() is started.</p>
+<p>Within ThreadPoolExecutor loop dthe list of dorks is iterated over submitting a fetch() call for each dork.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">DorkScan</span><span class="p">(</span>
+    <span class="n">dorks</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+    <span class="n">search_engine</span><span class="p">:</span> <span class="nb">str</span><span class="o">=</span><span class="s2">&#34;BING&#34;</span><span class="p">,</span>
+    <span class="n">pages</span><span class="p">:</span> <span class="nb">int</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">console</span><span class="p">:</span> <span class="n">Console</span><span class="o">=</span><span class="n">Console</span><span class="p">()</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">ScanResults</span><span class="p">]</span>
+
+<span class="c1"># Example Usage</span>
+<span class="kn">from</span> <span class="nn">dorkscan</span> <span class="kn">import</span> <span class="n">DorkScan</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">DorkScan</span><span class="p">(</span>
+    <span class="n">search_engine</span><span class="p">:</span> <span class="nb">str</span><span class="o">=</span><span class="s2">&#34;BING&#34;</span><span class="p">,</span>
+    <span class="n">pages</span><span class="p">:</span> <span class="nb">int</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">dorks</span><span class="p">:</span> <span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;inurl:.php?&#34;</span><span class="p">,</span> <span class="s2">&#34;inurl:admin.php&#34;</span><span class="p">]</span>
+    <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
+</code></pre></div><p>To view a live demonstration of DorkScan run it as a python module.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">$pip</span> install dorkscan
+<span class="nv">$python3</span> -m dorkscan
+</code></pre></div><h2 id="python-tils">python TIL&rsquo;s</h2>
+<h3 id="rich">Rich</h3>
+<p>While dorkscan doesn&rsquo;t have a CLI. It does however have offer a demonstration / help page via running the module itself <code>python3 -m dorkscan</code>. I used Rich to handle the console output and tbh its the part of the project I&rsquo;m most proud of.
+(Insert screen recording)</p>
+<h3 id="packaging">Packaging</h3>
+<p>This is the second python project I&rsquo;ve packaged and distributed, both through PyPI. Using <code>Twine</code>, I made sure to upload to the test PyPI repository. Uploading packages to multiple repositories was so much easier than I had expected. Using a <code>.pypirc</code> makes it as simple as switching your <code>-r</code> argument.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[distutils]
+index-servers =
+    testpypi
+    pypi
+
+[pypi]
+username = unkwn1
+
+[testpypi]
+username = unkwn1
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="nv">$twine</span> upload -r testpypi dist/*
+</code></pre></div><h4 id="testing--versioning">Testing / Versioning</h4>
+<p>Also, I need to find a way to support lower versions of python. Currently dorkscan is confined to python 3.10 as I&rsquo;ve utilized <code>match</code>/<code>case</code>.</p>
+<p>I haven&rsquo;t got around to using Tox for testing.</p>
+<h3 id="naming">Naming</h3>
+<p>Even though DorkScan boils down to a single function for public use I wanted to have a demo that was CLI-like. All of my python projects end up with import statements like <code>from dorkscan.scan import DorkScan</code>. It turns out putting things into those pesky <code>__init__.py</code> and <code>__main__.py</code> files really  help.</p>
+<p>DorkScan resides in the init file and the function called when running the demo resides in main. Importing the function is now cleaner imo as <code>from dorkscan import DorkScan</code> and the CLI demo is <code>python3 -m dorkscan</code>.</p>
 </div>
     <div class="post-footer">
       <div class="info">
         
-          <span class="separator"><a class="category" href="/categories/python/">Python</a></span>
+          <span class="separator"><a class="category" href="/categories/projects/">Projects</a><a class="category" href="/categories/infosec/">InfoSec</a><a class="category" href="/categories/coding/">Coding</a></span>
 
 
 
@@ -389,7 +443,7 @@
         
 
         
-          <span class="separator"><a class="tag" href="/tags/linux/">Linux</a><a class="tag" href="/tags/python/">Python</a><a class="tag" href="/tags/sed/">sed</a></span>
+          <span class="separator"><a class="tag" href="/tags/python/">python</a><a class="tag" href="/tags/gitlab/">gitlab</a><a class="tag" href="/tags/google-dorking/">google dorking</a><a class="tag" href="/tags/web-scraping/">web scraping</a></span>
 
 
 

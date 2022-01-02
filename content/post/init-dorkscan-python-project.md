@@ -1,7 +1,7 @@
 +++
 author = "unkwn1"
 title = "DorkScan - Automating Dorked Search Queries"
-date = 2022-01-01
+date = "2022-01-01"
 description = "DorkScan automates the dorked query and scraping of search engine result pages to find links that include query parameters."
 tags = [
     "python",
@@ -16,6 +16,7 @@ categories = [
 ]
 +++
 
+# DorkScan - Automate Scraping Dorked Search Queries
 
 [DorkScan](https://gitlab.com/unkwn1/dorkscan), a project I've been working on for the past couple of weeks after contributing to a friends (original) project. DorkScan automates the dorked query and scraping of search engine result pages to find links that include query parameters. Below I'll go over the module and some interesting things I learned along the way.
 
@@ -92,5 +93,3 @@ I haven't got around to using Tox for testing.
 Even though DorkScan boils down to a single function for public use I wanted to have a demo that was CLI-like. All of my python projects end up with import statements like `from dorkscan.scan import DorkScan`. It turns out putting things into those pesky `__init__.py` and `__main__.py` files really  help.
 
 DorkScan resides in the init file and the function called when running the demo resides in main. Importing the function is now cleaner imo as `from dorkscan import DorkScan` and the CLI demo is `python3 -m dorkscan`.
-
-

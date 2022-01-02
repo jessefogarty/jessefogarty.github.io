@@ -13,7 +13,9 @@
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://unkwn1.dev/post/init-dorkscan-python-project/</guid>
-      <description>DorkScan, a project I&amp;rsquo;ve been working on for the past couple of weeks after contributing to a friends (original) project. DorkScan automates the dorked query and scraping of search engine result pages to find links that include query parameters.</description>
+      
+        <description>DorkScan - Automate Scraping Dorked Search Queries DorkScan, a project I&amp;rsquo;ve been working on for the past couple of weeks after contributing to a friends (original) project.</description>
+      
     </item>
     
   </channel>
