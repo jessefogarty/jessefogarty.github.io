@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+><head>
+  <title>
+    
+      Jesse Fogarty
+        |
+        DorkScan - v0.0.2 Update Notes
+
+
+      
+
+
+    
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.91.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta
+    name="description"
+    content="
+      Switched from bs4 to lxml. Engines class created. Default search engines moved to asset vs hard-coded.
+
+
+    "
+  />
+  
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/main.min.861c630407a306e1a79890bffbab9b381c5a0b03cd0c3b79755cc5eeea04b6b0.css"
+    integrity="sha256-hhxjBAejBuGnmJC/&#43;6ubOBxaCwPNDDt5dVzF7uoEtrA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.058b31f17db60602cc415fd63b0427e7932fbf35c70d8e341a4c39385f5f6f3e.css"
+    integrity="sha256-BYsx8X22BgLMQV/WOwQn55MvvzXHDY40Gkw5OF9fbz4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://unkwn1.dev/post/dorkscan-update-summary-v0-0-2/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.2a2cd9614b7d007dfbb75e8da19e3a0fa872ceab53c6d000c00b7a0c89b85bfc.js"
+    integrity="sha256-KizZYUt9AH37t16NoZ46D6hyzqtTxtAAwAt6DIm4W/w="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.7fd87181cdd7e8413aa64b6867bb32f3a8dc242e684fc7d5bbb9f600dbc2b6eb.js"
+      integrity="sha256-f9hxgc3X6EE6pktoZ7sy86jcJC5oT8fVu7n2ANvCtus="
+      crossorigin="anonymous"
+    ></script>
+
+  
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://unkwn1.dev/images/site-feature-image.png"/>
+
+<meta name="twitter:title" content="DorkScan - v0.0.2 Update Notes"/>
+<meta name="twitter:description" content="Switched from bs4 to lxml. Engines class created. Default search engines moved to asset vs hard-coded."/>
+
+
+
+  
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "DorkScan - v0.0.2 Update Notes",
+        "headline": "DorkScan - v0.0.2 Update Notes",
+        "alternativeHeadline": "",
+        "description": "
+      Switched from bs4 to lxml. Engines class created. Default search engines moved to asset vs hard-coded.
+
+
+    ",
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/unkwn1.dev\/post\/dorkscan-update-summary-v0-0-2\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "unkwn1"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "unkwn1"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "unkwn1"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "unkwn1"
+        },
+        "copyrightYear" : "2022",
+        "dateCreated": "2022-01-02T00:00:00.00Z",
+        "datePublished": "2022-01-02T00:00:00.00Z",
+        "dateModified": "2022-01-02T00:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "unkwn1",
+            "url": "https://unkwn1.dev",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/unkwn1.dev\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+        
+        "https://unkwn1.dev/images/site-feature-image.png"
+
+
+      
+      ]
+
+    ,
+        "url" : "https:\/\/unkwn1.dev\/post\/dorkscan-update-summary-v0-0-2\/",
+        "wordCount" : "400",
+        "genre" : [ 
+      
+      "Projects"
+
+    
+      
+        ,
+
+      
+      "InfoSec"
+
+    
+      
+        ,
+
+      
+      "Coding"
+
+    ],
+        "keywords" : [ 
+      
+      "python"
+
+    
+      
+        ,
+
+      
+      "gitlab"
+
+    
+      
+        ,
+
+      
+      "google dorking"
+
+    
+      
+        ,
+
+      
+      "web scraping"
+
+    ]
+    }
+  </script>
+
+
+
+</head>
+<body>
+    <header><div
+  class="page-top 
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </a>
+  <nav>
+    <ul class="nav__list" id="navMenu">
+      <div class="nav__links">
+        
+        
+          
+          <li>
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/post/"
+              
+              title=""
+              >Posts</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/backpack-backup/"
+              
+              title=""
+              >Backpack Project</a
+            >
+          </li>
+
+        
+      </div>
+      <ul>
+        
+        
+          <li>
+            <a class="theme-switch" title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </li>
+
+        
+      </ul>
+    </ul>
+  </nav>
+</div>
+</header>
+    <div class="wrapper">
+      <aside><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="logo-title">
+      <div class="title">
+        <img src="/images/jesse.jpg" alt="profile picture" />
+        <h3 title=""><a href="/">Jesse&#39;s Digital Scratchpad</a></h3>
+        <div class="description">
+          <p>Learning as I go.</p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+      
+        <li>
+          <a href="https://github.com/jessefogarty/" rel="me" aria-label="GitHub" title="GitHub">
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="https://www.instagram.com/jessefogarty" rel="me" aria-label="instagram" title="instagram">
+            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="mailto:jfogarty@tuta.io" rel="me" aria-label="e-mail" title="e-mail">
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer--sidebar">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          2021
+
+        
+      </li>
+      
+    </ul>
+  </div>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.71100d84fab0ad794b8399a66ac810700cc78d703f715dc10af4d7ba7b761362.js"
+    integrity="sha256-cRANhPqwrXlLg5mmasgQcAzHjXA/cV3BCvTXunt2E2I="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main>
+        <div class="autopagerize_page_element">
+          <div class="content">
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    <div class="post-content">
+      
+      <div class="post-title">
+        <h1>DorkScan - v0.0.2 Update Notes</h1>
+        
+          <div class="info">
+            <em class="fas fa-calendar-day"></em>
+            <span class="date"
+              >
+                Sun, Jan 2, 2022
+
+
+              </span
+            >
+            <em class="fas fa-stopwatch"></em>
+            <span class="reading-time">2-minute read</span>
+          </div>
+
+        
+      </div><h1 id="dorkscan-v002">DorkScan v0.0.2</h1>
+<p>A day later and two merges later and I think DorkScan is shaping up to be a bit of code I&rsquo;m quite happy with. These changes I&rsquo;ll be going over fix bugs, reduce code and, generally make the code more approachable.</p>
+<h2 id="switching-html-parser">Switching HTML Parser</h2>
+<p>When I came into the project the previous author was using bs4. The parser seemed to be a underlying issue as the links being retrieved would sometimes be truncated. This was likely the result of a wrong selector. There&rsquo;s nothing wrong with bs4; however, using the aforementioned selector issue as an example I simply find it bulky and tend to use lxml whenever possible.</p>
+<p>The main change here besides the library is that I now pull every link from the SERP source code. I think use an if statement with a few regex searches to filter the results.</p>
+<p><strong>Previous Code</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">soup</span> <span class="o">=</span> <span class="n">bsoup</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s2">&#34;html.parser&#34;</span><span class="p">)</span>
+<span class="n">links</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">findAll</span><span class="p">(</span><span class="n">engine</span><span class="p">[</span><span class="s2">&#34;soup_tag&#34;</span><span class="p">],</span> <span class="n">engine</span><span class="p">[</span><span class="s2">&#34;soup_class&#34;</span><span class="p">])</span>
+<span class="c1"># filter</span>
+<span class="p">[</span>
+<span class="n">link</span><span class="o">.</span><span class="n">text</span>
+<span class="k">for</span> <span class="n">link</span> <span class="ow">in</span> <span class="n">links</span>
+	<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">links</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span>
+		<span class="ow">and</span> <span class="ow">not</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">blacklist</span><span class="p">,</span> <span class="n">link</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+			<span class="ow">and</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s2">&#34;\?.+\=&#34;</span><span class="p">,</span> <span class="n">link</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+
+</code></pre></div><p><strong>New Code</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">data</span> <span class="o">=</span> <span class="n">html</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">resp</span><span class="p">)</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s2">&#34;//a/@href&#34;</span><span class="p">)</span>
+<span class="n">links</span> <span class="o">=</span> <span class="p">[</span>
+	<span class="n">link</span>
+	<span class="k">for</span> <span class="n">link</span> <span class="ow">in</span> <span class="n">data</span>
+		<span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s2">&#34;^http|s://&#34;</span><span class="p">,</span> <span class="n">link</span><span class="p">)</span>
+			<span class="ow">and</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s2">&#34;\?.+\=&#34;</span><span class="p">,</span> <span class="n">link</span><span class="p">)</span>
+				<span class="ow">and</span> <span class="ow">not</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">blacklist</span><span class="p">,</span> <span class="n">link</span><span class="p">)</span>
+<span class="p">]</span>
+
+</code></pre></div><p>*<em>Ignore the indenting it&rsquo;s to help illustrate the steps in the list comprehension</em></p>
+<h2 id="making-engines-more-modular">Making Engines More Modular</h2>
+<p>One thing that bugged me considerably was the hard-coded search engines dictionary. It confined the use to dictionary&rsquo;s already added. The problem with making things easier for people to add their own SearchEngine dictionaries was the changing names for query parameters.</p>
+<p>I had to figure out was how to update a dictionary without knowing the keys - sometimes a search engine will use the key <code>first</code> to denote a page, others <code>b</code>. So, instead of using a predetermined key I utilize the order to make changes.</p>
+<p>Here&rsquo;s an example below of how I use a dictionary&rsquo;s keys to update the values.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">engine</span><span class="p">[</span><span class="s2">&#34;params&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="c1"># key will always be used as it&#39;s the existing key</span>
+	<span class="n">k</span><span class="p">:</span> <span class="p">(</span><span class="n">dork</span> <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="s2">&#34;q&#34;</span> <span class="k">else</span> <span class="n">v</span> <span class="o">*</span> <span class="n">page</span><span class="p">)</span> 
+	<span class="k">for</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span> <span class="ow">in</span> <span class="n">engine</span><span class="p">[</span><span class="s2">&#34;params&#34;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+   <span class="p">}</span>
+
+<span class="c1"># Because I know the key &#39;q&#39; exists I can use it to</span>
+<span class="c1"># figure out where page should go. However, </span>
+<span class="c1"># I could do a type check </span>
+<span class="c1"># if it&#39;s a str I know it&#39;s q if it&#39;s an int it&#39;s the page value</span>
+</code></pre></div><p>This may lead to export / add dictionary functions etc.</p>
+</div>
+    <div class="post-footer">
+      <div class="info">
+        
+          <span class="separator"><a class="category" href="/categories/projects/">Projects</a><a class="category" href="/categories/infosec/">InfoSec</a><a class="category" href="/categories/coding/">Coding</a></span>
+
+
+
+
+        
+
+        
+          <span class="separator"><a class="tag" href="/tags/python/">python</a><a class="tag" href="/tags/gitlab/">gitlab</a><a class="tag" href="/tags/google-dorking/">google dorking</a><a class="tag" href="/tags/web-scraping/">web scraping</a></span>
+
+
+
+
+        
+      </div>
+    </div>
+
+    
+  </div>
+
+
+          </div>
+        </div>
+      </main>
+    </div><footer class="footer footer--base">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          2021
+
+        
+      </li>
+      
+    </ul>
+  </div>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.71100d84fab0ad794b8399a66ac810700cc78d703f715dc10af4d7ba7b761362.js"
+    integrity="sha256-cRANhPqwrXlLg5mmasgQcAzHjXA/cV3BCvTXunt2E2I="
+    crossorigin="anonymous"
+  ></script></body>
+</html>
